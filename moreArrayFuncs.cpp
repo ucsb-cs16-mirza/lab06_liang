@@ -36,7 +36,7 @@ int indexOfMax(int *a, int size)
 int indexOfMin(int *a, int size)
 {
    assert(size >= 1);
-   int com = 0;
+   int com = a[0];
    for ( int i = 0; i < size; i++){
 	   if (*(a+i) < com){
 		   com = *(a+i);
@@ -65,7 +65,7 @@ int largestValue(int *a, int size)
 	   }
    }
    return com;
-   return 0; // STUB !!! Remove and replace with correct code
+   // STUB !!! Remove and replace with correct code
 }
 
 // a: an array of ints.  size is how many ints in array
@@ -76,8 +76,8 @@ int largestValue(int *a, int size)
 int smallestValue(int *a, int size)
 {
    assert(size >= 1);
-  int com =0;
-  for ( int i = 0;i<size; i++){
+  int com =a[0];
+  for ( int i = 1;i<size; i++){
 	  if ( a[i]< com){
 		  com = a[i];
 	  }
